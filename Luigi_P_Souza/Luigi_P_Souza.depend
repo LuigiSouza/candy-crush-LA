@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1558746498 source:c:\users\luigi\desktop\luigi_p_souza\src\gl_canvas2d.cpp
+	"gl_canvas2d.h"
+	"GL/glut.h"
+
+1558640094 c:\users\luigi\desktop\luigi_p_souza\src\gl_canvas2d.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"GL/glut.h"
+	"GL/freeglut_ext.h"
+
+1558640094 c:\users\luigi\desktop\luigi_p_souza\include\gl\glut.h
+	"freeglut_std.h"
+
+1558640096 c:\users\luigi\desktop\luigi_p_souza\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1558640096 c:\users\luigi\desktop\luigi_p_souza\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1560045973 source:c:\users\luigi\desktop\luigi_p_souza\src\jogo.cpp
+	<windows.h>
+	"GL/glut.h"
+	"GL/freeglut_ext.h"
+	"jogo.h"
+	"gl_canvas2d.h"
+
+1560009528 c:\users\luigi\desktop\luigi_p_souza\src\jogo.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<string.h>
+	"GL/glut.h"
+	"GL/freeglut_ext.h"
+
+1560044676 source:c:\users\luigi\desktop\luigi_p_souza\src\main_c.cpp
+	<windows.h>
+	"GL/glut.h"
+	"GL/freeglut_ext.h"
+	<stdio.h>
+	<stdlib.h>
+	"jogo.h"
+	"gl_canvas2d.h"
+
