@@ -18,7 +18,7 @@
   
 <h5>Contagem de Pontos:</h5>
 	
-<h6>Tricas:                                                          	+40 </h6>
+<h6>Tricas:                                   		                       	+40 </h6>
 <h6>Quadras ou Mais:                                                 	+80 (por peças além da trinca)</h6>
 <h6>Cruz Comum:                                                      	+30</h6>
 <h6>Cruzamento Vertical de Trica(em uma linha horizontal):           	+60</h6>
