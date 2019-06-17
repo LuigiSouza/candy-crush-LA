@@ -18,60 +18,26 @@
   
 <h5>Contagem de Pontos:</h5>
 	
-<h6>Tricas:                                                          	+40 
-	Quadras ou Mais:                                                 	+80 (por peças além da trinca)
-	Cruz Comum:                                                      	+30
-	Cruzamento Vertical de Trica(em uma linha horizontal):           	+60
-	Cruzamento Vertical de Quadras ou mais(em uma linha horizontal): 	+80 (por peças além da trinca)
-	Biscoitão:                                                       	+15 (por peça explodida) </h6>
+<h6>Tricas:                                                          	+40 </h6>
+<h6>Quadras ou Mais:                                                 	+80 (por peças além da trinca)</h6>
+<h6>Cruz Comum:                                                      	+30</h6>
+<h6>Cruzamento Vertical de Trica(em uma linha horizontal):           	+60</h6>
+<h6>Cruzamento Vertical de Quadras ou mais(em uma linha horizontal): 	+80 (por peças além da trinca)</h6>
+<h6>Biscoitão:                                                       	+15 (por peça explodida) </h6>
 
 <h5>Implementação do Programa:</h5>
 
-	Para a manipulação do código do jogo, como já dito, foi utilizado das funções disponíveis na API Canvas 2D
-	e das funções padrões do C, como math.h e string.h. Todo o programa no caso, é repetido sem interrupções na
-	função "render" debtro da API que tem a capacidade de desenhar qualquer desenho na tela do computador a 
-	partir de cada alteração feita pelo usuário, no caso, dentro da função render há uma função chamada Iniciar
-	que manda e retorna uma valor para uma mesma variável que por si só controlará o início do jogo para evitar 
-	a aleatoriedade do programa antes do necessário. 
+<h6>Para a manipulação do código do jogo, como já dito, foi utilizado das funções disponíveis na API Canvas 2D e das funções padrões do C, como math.h e string.h. Todo o programa no caso, é repetido sem interrupções na função "render" debtro da API que tem a capacidade de desenhar qualquer desenho na tela do computador a partir de cada alteração feita pelo usuário, no caso, dentro da função render há uma função chamada Iniciar que manda e retorna uma valor para uma mesma variável que por si só controlará o início do jogo para evitar a aleatoriedade do programa antes do necessário. </h6>
 
-	Para o desenho do tabuleiro do jogo foram denessário dos laços de repetição, um para linhas horizontais e outro
-	para linhas verticais que no caso, a partir de um valor inicial (margem e piso) das coordenadas do tabuleiro
-	desenham somando a si mesmo um valor em X ou Y no plano cartesiano para desenhar linhas de um tabuleiro 
-	quadriculado e representar setores onde entrarão cada figura do jogo. 
-	Na primeira jogada, todas peças do tabuleiro são sorteadas aleatoriamente a partir da biblioteca time.h e 
-	posteriormente serão mantidas para serem alterada somente pelo usuário. Para representar cada peça, há outros
-	dois laços de repetição que percorrerão da mesma maneira que o desenho do tabuleiro, todo a matriz em branco 
-	para desenhar cada peça no exato centro das "casas" da malha e ter seus limites da figura alterados manualmente
-	pelo programador em cada tipo de figura. Foram representado círculos, triângulos, hexágonos e quadrados pelas 
-	funções 'circle', 'rect' e 'polygon'.
+<h6>Para o desenho do tabuleiro do jogo foram denessário dos laços de repetição, um para linhas horizontais e outro	para linhas verticais que no caso, a partir de um valor inicial (margem e piso) das coordenadas do tabuleiro esenham somando a si mesmo um valor em X ou Y no plano cartesiano para desenhar linhas de um tabuleiro quadriculado e representar setores onde entrarão cada figura do jogo. Na primeira jogada, todas peças do tabuleiro são sorteadas aleatoriamente a partir da biblioteca time.h e posteriormente serão mantidas para serem alterada somente pelo usuário. Para representar cada peça, há outros dois laços de repetição que percorrerão da mesma maneira que o desenho do tabuleiro, todo a matriz em branco para desenhar cada peça no exato centro das "casas" da malha e ter seus limites da figura alterados manualmente pelo programador em cada tipo de figura. Foram representado círculos, triângulos, hexágonos e quadrados pelas funções 'circle', 'rect' e 'polygon'.</h6>
 
-	Para o contador de pontos, a pontuação é configurada a medida das combinações do jogador e guardados em uma variável
-	global. Tendo em vista que o programa só exibe textos estáticos, o valor da pontuação é converitido para um vetor
-	que guardará cada ordem das unidades cimples (unidade, dezena, centena, etc.) e imprimirá cada uma na tela formando 
-	um valor só e exibindo a pontuação real do usuário.
+<h6>Para o contador de pontos, a pontuação é configurada a medida das combinações do jogador e guardados em uma variável global. Tendo em vista que o programa só exibe textos estáticos, o valor da pontuação é converitido para um vetor que guardará cada ordem das unidades cimples (unidade, dezena, centena, etc.) e imprimirá cada uma na tela formando um valor só e exibindo a pontuação real do usuário.</h6>
 
-	Para a seleção de peças do jogador, o programa chama uma função sempre que as coordenadas do mouse estiverem dentro
-	do tabuleiro e o botão esquerdo for pressionado. A partir daí, o programa percorrerá todo a matriz do jogo comparando	
-	cada posição do mouse com sua coordenada reespecitiva do tabuleiro para assim, quando encontrar a posição correspondente,
-	guardar essa informação em um ponteiro que receberá o endereço da matriz na posição específica para comparar posteriormente.
-	Se durante a função de desenahr as peças, for encontrada a posíção onde o ponteiro possuir o mesmo endereço do doce, um
-	quadrado dourado será desenhado em volta para demontrar que ali a peça foi selecionada.
-	Para segunda seleção o funcionamento é exatamente igual, contudo, caso a segunda seleção seja a mesma posição que a primeira,
-	a seleção será desfeita. Caso a segunda escolha esteja muito longe (qualquer posição que não seja adjacente a primeira
-	seleção de maneira horizontal ou vertical) então a primeira seleção tomará o lugar segunda e a antiga seleção será desfeita.
+<h6>Para a seleção de peças do jogador, o programa chama uma função sempre que as coordenadas do mouse estiverem dentro	do tabuleiro e o botão esquerdo for pressionado. A partir daí, o programa percorrerá todo a matriz do jogo comparando	cada posição do mouse com sua coordenada reespecitiva do tabuleiro para assim, quando encontrar a posição correspondente,	guardar essa informação em um ponteiro que receberá o endereço da matriz na posição específica para comparar posteriormente. Se durante a função de desenahr as peças, for encontrada a posíção onde o ponteiro possuir o mesmo endereço do doce, um	quadrado dourado será desenhado em volta para demontrar que ali a peça foi selecionada.	Para segunda seleção o funcionamento é exatamente igual, contudo, caso a segunda seleção seja a mesma posição que a primeira,	a seleção será desfeita. Caso a segunda escolha esteja muito longe (qualquer posição que não seja adjacente a primeira seleção de maneira horizontal ou vertical) então a primeira seleção tomará o lugar segunda e a antiga seleção será desfeita.</h6>
 	
-	Para a procura de combinações, dois laçoes de repeptição percorrerão toda a matriz do jogo procurando primeiramente por
-	linahs horizontais que tenham o mesmo valor consecutivo de três ou mais peças iguais, para posteriormente, buscar combinações
-	verticais. Caso seja encontrada uma combinação horizontal, outro laço percorrerá essa linha correspondente buscando por 
-	combinações verticais, formando assim, as combinações diferenciadas (cruzadas, forma de L ou T).
-	Quando uma combinação é formada, todas as peças desta são substituídas por uma figuras vermelha e laranja para representar uma
-	explosão das peças. Posteriormente, o programa procurará por essas figuras de explosão e automaticamente as substituirá por
-	espaçoes em branco para realizar o ShiftDown. Como já dito, no topo novas peças serão sorteadas.
-	Caso o jogador selecione duas peças que após sua troca não será possível realizar combinações, então a troca não será efetuada
-	a as seleções do jogador serão desfeitas.
+<h6>Para a procura de combinações, dois laçoes de repeptição percorrerão toda a matriz do jogo procurando primeiramente por	linahs horizontais que tenham o mesmo valor consecutivo de três ou mais peças iguais, para posteriormente, buscar combinações verticais. Caso seja encontrada uma combinação horizontal, outro laço percorrerá essa linha correspondente buscando por combinações verticais, formando assim, as combinações diferenciadas (cruzadas, forma de L ou T). Quando uma combinação é formada, todas as peças desta são substituídas por uma figuras vermelha e laranja para representar uma explosão das peças. Posteriormente, o programa procurará por essas figuras de explosão e automaticamente as substituirá por	espaçoes em branco para realizar o ShiftDown. Como já dito, no topo novas peças serão sorteadas. Caso o jogador selecione duas peças que após sua troca não será possível realizar combinações, então a troca não será efetuada a as seleções do jogador serão desfeitas.</h6>
 
-	Durante o ShiftDown, cada peça válida será tranferida para baixo de cada vez, realizando um efeito visual de movimento dando a
-	entender que as peças estão literalmente caindo nos espaços livres.	
+<h6>Durante o ShiftDown, cada peça válida será tranferida para baixo de cada vez, realizando um efeito visual de movimento dando a entender que as peças estão literalmente caindo nos espaços livres.	</h6>
 
 
 	  
